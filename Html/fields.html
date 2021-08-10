@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Predict</title>
+	</head>
+	<body bgcolor="#FFF5F5">
+		<h1 style="font-size: 200%;color: #6585FF;" align="center">ENTER THE VALUES</h1>
+		<form action = "http://localhost:5000/checkvalue" method="POST">
+		<table border=0.75 width=100%>
+			<center> <p> <label style = "color:RED">*</label><label>Choose file:</label>
+			<select name="dataset_file">
+			<option value="Heart1.csv">Heart1.csv</option>
+			<option value="Heart2.csv">Heart2.csv</option>
+		   	</select>  </p>
+			<tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr>
+			<tr> 
+				<td> <p> <label style = "color:RED">*</label>Value01: <input type = "text" name = "x1"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value02: <input type = "text" name = "x2"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value03: <input type = "text" name = "x3"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value04: <input type = "text" name = "x4"/> </p> </td>
+			</tr>
+			<tr> 
+				<td> <p> <label style = "color:RED">*</label>Value05: <input type = "text" name = "x5"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value06: <input type = "text" name = "x6"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value07: <input type = "text" name = "x7"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value08: <input type = "text" name = "x8"/> </p> </td>
+			</tr>
+			<tr> 
+				<td> <p> <label style = "color:RED">*</label>Value09: <input type = "text" name = "x9"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value10: <input type = "text" name = "x10"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value11: <input type = "text" name = "x11"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value12: <input type = "text" name = "x12"/> </p> </td>
+			</tr>
+			<tr>
+				<td> <p> <label style = "color:RED">*</label>Value13: <input type = "text" name = "x13"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value14: <input type = "text" name = "x14"/> </p> </td>
+				<td> <p> <label style = "color:RED">*</label>Value15: <input type = "text" name = "x15"/> </p> </td>
+				<td> <center> <input type="submit" value="CHECK"> </center> </td>
+			</tr>
+			<tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr>
+		</table>
+		<h4 style="color: red;" align="center" > <b> <u> NOTE:</u> </b>   &nbsp Enter LEAST value of the field for unknown values. Refer USER HELP for guidance. </h4>
+		</form>
+
+		<h1 style="font-size: 200%;color: #6585FF;" align="center">USER HELP</h1>
+		<center>
+		<table width = 100% border = 1>
+		<tr> <td>
+			<p> <b> <center style="color: #6585FF;"> ATTRIBUTES AND THEIR VALUES FOR Heart1.csv </center> </b> <br>
+			<table border=0>
+				<tr> <td> <b> 1. Gender: </b> Male = 1 and Female = 0 </td>
+					 <td> <b> 2. Age: </b> an integer value (>10 and <100) </td>
+					 <td> <b> 3. Education: </b> PG = 1, UG = 2, Diploma/12th = 3 and Illiterate = 4 </td> </tr>
+				<tr> <td> <b> 4. CurrentSmoker: </b> Yes = 1 and No = 0 </td>
+					 <td> <b> 5. CigsPerDay: </b> count of cigarettes not less than Zero </td>
+				     <td> <b> 6. BPMeds: </b> Using = 1 and not using = 0 </td> </tr>
+				<tr> <td> <b> 7. PrevalentStroke: </b> Yes = 1 and No = 0 </td>
+					 <td> <b> 8. PrevalentHyp: </b> Yes = 1 and No = 0 </td>
+					 <td> <b> 9. Diabetes: </b> Yes = 1 and No = 0 </td> </tr>
+				<tr> <td> <b> 10. TotChol: </b> an integer value (>80 and <450) </td>
+					 <td> <b> 11. SysBP: </b> an integer value indicating Systolic BP (>= 90 and <= 250) </td>
+					 <td> <b> 12. DiaBP: </b> an integer value indicating Diastolic BP (>= 60 and <=140) </td> </tr>
+				<tr> <td> <b> 13. BMI: </b> an integer indicating Body Mass Index of a person (18.5 to 30) </td>
+					 <td> <b> 14. HeartRate: </b> pulse (>=50 and <=160) </td>
+					 <td> <b> 15. Glucose: </b> a person's glucose levels (>=50 and <=130) </td> </tr> </table>
+			</p> </td>
+			<td>
+				<p> <b> <center style="color: #6585FF;"> ATTRIBUTES AND THEIR VALUES FOR Heart2.csv </center> </b> <br> 
+				<table border=0>
+					<tr> <td> <b> 1. Age: </b> an integer value (>10 and <100) </td>
+						 <td> <b> 2. Sex: </b> Male = 1 and Female = 0 </td>
+						 <td> <b> 3. Alcohol: </b> Using = 1 and not using = 0 </td> </tr>
+					<tr> <td> <b> 4. Education: </b> PG = 1, UG = 2, Diploma/12th = 3 and Illiterate = 4 </td>
+						 <td> <b> 5. Famhist: </b> Yes = 1 and No = 0 </td>
+						 <td> <b> 6. Typea: </b> typea heart disease (>20 and <80) </td> </tr> 
+					<tr> <td> <b> 7. Obesity: </b> (18.5 to 30) </td>
+						 <td> <b> 8. ldl: </b> (1.0 to 6.0) </td>
+						 <td> <b> 9. Attacked: </b> Yes = 1 and No = 0 </td> </tr>
+					<tr> <td> <b> 10. TotChol: </b> an integer value (>100 and <450) </td>
+						 <td> <b> 11. Sbp: </b> an integer value indicating Systolic BP (>= 90 and <= 250) </td>
+						 <td> <b> 12. Dbp: </b> an integer value indicating Diastolic BP (>= 60 and <=140) </td> </tr>
+					<tr> <td> <b> 13. Pulse </b> pulse (>50 and <160) </td>
+						 <td> <b> 14. Glucose: </b> a person's glucose levels (>50 and <130)</td>
+						 <td> <b> 15. Adiposity: </b> an integer indicating Body Mass Index of a person (18.5 to 30) </td> </tr> </table>
+			</p> </td> </tr>
+		</table>
+		</center>
+		
+	</body>
+</html>

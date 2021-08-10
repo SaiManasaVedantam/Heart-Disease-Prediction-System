@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Home</title>
+	</head>
+	<body bgcolor="#FFF5F5">
+		<h2 style="font-size: 320%;color: #6585FF;" align="center">HEART DISEASE PREDICTION SYSTEM </h2>
+		
+		<form action="http://localhost:5000/result" method="POST">
+			<center> <label> Choose file: </label> &nbsp &nbsp &nbsp
+			<select name="dataset_file">
+			<option value="Heart1.csv">Heart1.csv</option>
+			<option value="Heart2.csv">Heart2.csv</option>
+		    </select>
+			<br> <br> <br>
+			<input type="submit" value="Show result"> </center>
+		</form>
+		
+		<br> <br>
+		<form action="http://localhost:5000/check">
+			<center> <input type="submit" value="Check"> </center>
+		</form>
+		
+		 <br> <br>
+		<form action="http://localhost:5000/analysis">
+			<center> <input type="submit" value="Show Analysis"> </center>
+		</form>
+		
+	</body>
+</html>
