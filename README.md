@@ -13,8 +13,8 @@ This project can be applied in the following domains:
 3. To take necessary actions based on the prediction result.
 
 # Technologies Used:
-Python
-Flask
-Graphlab Create
-SQL
-Basic HTML (As the project is more focused on accuracy but not on UI)
+1. Python
+2. Flask
+3. Graphlab Create
+4. SQL
+5. Basic HTML (As the project is more focused on accuracy but not on UI)
