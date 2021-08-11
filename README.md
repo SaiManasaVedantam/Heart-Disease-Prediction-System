@@ -18,3 +18,5 @@ This project can be applied in the following domains:
 3. Graphlab Create
 4. SQL
 5. Basic HTML (As the project is more focused on reliable prediction but not on UI)
+
+# Project done in: November 2018
