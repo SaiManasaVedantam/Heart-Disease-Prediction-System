@@ -17,4 +17,4 @@ This project can be applied in the following domains:
 2. Flask
 3. Graphlab Create
 4. SQL
-5. Basic HTML (As the project is more focused on accuracy but not on UI)
+5. Basic HTML (As the project is more focused on reliable prediction but not on UI)
