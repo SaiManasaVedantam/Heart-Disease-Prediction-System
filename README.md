@@ -11,3 +11,10 @@ This project can be applied in the following domains:
 1. To appoint employees in risk prone jobs.
 2. To choose appropriate treatment in case of an attack.
 3. To take necessary actions based on the prediction result.
+
+# Technologies Used:
+Python
+Flask
+Graphlab Create
+SQL
+Basic HTML (As the project is more focused on accuracy but not on UI)
